@@ -1,18 +1,18 @@
 # The *very very useful ones*
 ### `man`
 - `man <command name>`
-- The main command returns a helpful help page that gives you a brief description of what exactly a command does and how to use it.
+- The main command returns a useful help page that gives you a brief description of what exactly a command does and how to use it.
 - In case that man doesn't work, make sure that you have `mandocs` or `man` installed.
 - The manual entries can also be accessed via a browser.
 
 ### `--help` or `-h` flag
- - Sometimes a command is too niche to warrant a page in the manual. In such cases you can use the help flags. There is no set standard but they're usually one of the two
+ - Sometimes a command is too niche to warrant a page in the manual. In such cases you can use the help flags. There is no set standard but start with one of the following:
  - `<command> --help` or `<command> -h`
  - If one doesn't work, try the other.
  
 ### `sudo` and `su` 
 - `su` opens the current shell as root while `sudo` runs a specified command as root.
-- In Linux root priviliges are very similiar to Adminstrator priviliges in Windows
+- In Linux, root priviliges are very similiar to Adminstrator priviliges in Windows
 - Be very careful when running anything as root. It can break your system.--
 - It also requires the current user to know the root password as well be a part of the sudoers list
 
@@ -28,10 +28,10 @@
 - `ls` shows all the visible files and folders in directory. 
 - `ls -a` shows all the hidden and visible files and folders in the directory.
 - `ls -A` shows **almost** all the hidden and visible files and folders in the directory(It excludes the `.` which loops back to the current directory and the `..` which points to the parent directory)
-- `ls -l` displays all the visible files and folders and lists them in tabular form with some extra information(like size, author, date modified, etc)
+- `ls -l` displays all the visible files and folders and lists them in tabular form with some extra information (e.g. size, author, date modified, etc.)
 
 ### `touch`
-- `touch <filename>` creates an empty folder with the name specified
+- `touch <filename>` creates an empty folder with the specified name
 
 ### `mkdir`
 - `mkdir <foldername>` creates a folder with the specified name in the current location of the terminal.
@@ -47,24 +47,24 @@
     
 ### `rm` 
 - `rm <file1> <file2> <file3>` deletes the files mentioned
-- **The Recycle Bin or Trash does not exist when it comes to deleting things from the terminal** so be careful with this command.
+- **The Recycle Bin or Trash does not exist when it comes to deleting things from the terminal** so be careful with this command, as it can not be undone.
 - `rm -f <file>` force deletes the file and overrides any warnings.
 - `rm -r <folder>` recursively deletes the contents of a folder and finally deletes the folder too.
 - **UNDER NO CIRCUMSTANCE SHOULD YOU RUN ANY OF THE FOLLOWING UNLESS YOU ARE ABSOLUTELY SURE ABOUT WHAT YOU ARE DOING**
     - `sudo rm -rf /` this will delete everything in your root directory
     - `rm -rf ~` this will delete everything in your home directory
 - Running `rm -rf` with elevated priviliges in a dangerous location will most probably break your OS.
-- Exercise caution.
+- Exercise caution when using any of the above commands.
    
 ### `grep`
-- `grep` is used to search the content of a specified file or durectory for a given string or a regex
+- `grep` is used to search the content of a specified file or directory for a given string or a regex
 - `grep '<search_term>' <file>` searches for the `search_term` in the `<file>`
 - `grep -i '<search_term>' <file>` will search for the `search_term` in a case insensitive way.
 - `grep -r '<search_term>' <folder_path>` will search for the `search_term` recursively within the specified directory.
     
 ### `cat`
 - `cat` allows the user to execute basic text modification from the terminal
-- It is not a full blown editor like Vim or Emacs but it can read and append to files
+- It is not a full-blown editor like Vim or Emacs but it can read and append to files
 - `cat <file>` will display the contents of the file 
 - `cat >> <file>` will allow you to enter some text into the terminal. The entered text is then appeneded to the end of the file.
 
