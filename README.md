@@ -125,3 +125,4 @@ int main() //Program that uses fget() to accept a string from the user and print
     return 0;
 }
 ```
+//Thanks for reading. THis has been a blurberblurb production
